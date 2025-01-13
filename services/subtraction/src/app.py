@@ -3,13 +3,13 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 
-@app.route("/add", methods=["POST"])
-def add():
+@app.route("/subtract", methods=["POST"])
+def subtract():
     try:
         data = request.get_json()
         num1 = float(data["num1"])
         num2 = float(data["num2"])
-        result = num1 + num2
+        result = num1 - num2
         return jsonify({"result": result}), 200
     except (KeyError, ValueError) as e:
         return jsonify({"error": str(e)}), 400
@@ -21,4 +21,4 @@ def health_check():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=10000)
+    app.run(host="0.0.0.0", port=10001)

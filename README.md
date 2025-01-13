@@ -24,8 +24,19 @@ tools
 - get python app in cluster 
     - docker local registry running on 5000
     - had to allow insecure registries 
-
     - build architecture errors 
+- update fuck the cluster because I can't get more than 1mbps to my fucking server
+
+- run containers locally 
+
 
 - write webapp 
 - point webapp at cluster 
+
+
+
+# PORTS
+9999  Frontend
+
+10000 addition
+10001 subtraction
