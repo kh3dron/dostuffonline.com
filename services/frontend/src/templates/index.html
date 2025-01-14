@@ -1,0 +1,35 @@
+{% include "header.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <h3> Add </h3>
+    <form method="POST" action="/add">
+        <input type="text" name="num1" placeholder="Addend 1" required>
+        <input type="text" name="num2" placeholder="Addend 2" required>
+        <button type="submit">Add</button>
+    </form>
+    <h3> Subtract </h3>
+    <form method="POST">
+        <input type="text" name="num1" placeholder="Subtrahend" required>
+        <input type="text" name="num2" placeholder="Subtractor" required>
+        <input type="radio" id="subtract" value="subtract">
+        <label for="subtract">Subtract</label>
+    </form>
+    {% if result is not none %}
+        <h2>Result: {{ result }}</h2>
+    {% endif %}
+</body>
+</html> 
+    </form>
+    {% if result is not none %}
+        <h2>Result: {{ result }}</h2>
+    {% endif %}
+</body>
+</html> 

@@ -1,4 +1,4 @@
-services=(frontend addition subtraction)
+services=$(ls services)
 
 for service in ${services[@]}; do
     cd services/$service
