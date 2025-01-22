@@ -1,0 +1,3 @@
+- get running on ec2:dewey
+- migrate to k8s
+- add more tools 

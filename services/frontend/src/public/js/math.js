@@ -17,7 +17,7 @@ async function performSubtraction() {
     const num1 = document.getElementById("subNum1").value;
     const num2 = document.getElementById("subNum2").value;
     console.log(`Performing subtraction with ${num1} and ${num2}`);
-    const response = await fetch("http://host.docker.internal:10001/subtract", {
+    const response = await fetch("http://localhost:10001/subtract", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
