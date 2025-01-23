@@ -16,6 +16,11 @@ app.use("/", indexRouter);
 app.use("/math", mathRouter);
 app.use("/unit-conversion", unitConversionRouter);
 
+// 404 Error Handler
+app.use((req, res, next) => {
+    res.status(404).render("404", { title: "Page Not Found" });
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);

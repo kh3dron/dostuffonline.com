@@ -12,3 +12,7 @@ h1 {
   font-size: 60px;
   font-weight: 700;
 }
+
+body {
+  background-color: #f0f0f0;
+}

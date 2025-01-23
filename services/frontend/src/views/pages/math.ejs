@@ -1,17 +1,11 @@
-<%= include('partials/header') %>
-<h1>Math</h1>
+<%- include('../partials/header') %>
+
+<h2>Math</h2>
+<script src="../../js/math.js"></script> 
 <div>
-  <h2>Addition</h2>
+  <h3>Addition</h3>
   <input type="number" id="addNum1" placeholder="Number 1" />
   <input type="number" id="addNum2" placeholder="Number 2" />
   <button onclick="performAddition()">Add</button>
   <p id="addResult"></p>
 </div>
-<div>
-  <h2>Subtraction</h2>
-  <input type="number" id="subNum1" placeholder="Number 1" />
-  <input type="number" id="subNum2" placeholder="Number 2" />
-  <button onclick="performSubtraction()">Subtract</button>
-  <p id="subResult"></p>
-</div>
-<script src="math.js"></script>
