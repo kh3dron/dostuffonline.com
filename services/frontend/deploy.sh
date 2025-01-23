@@ -1,5 +1,5 @@
 #!/bin/bash
-docker stop webtools-frontend
-docker rm webtools-frontend
-docker build -t webtools/frontend:latest .
-docker run -d --name webtools-frontend -p 9999:9999 webtools/frontend:latest
+docker stop dostuffonline-frontend
+docker rm dostuffonline-frontend
+docker build -t dostuffonline/frontend:latest .
+docker run -d --name dostuffonline-frontend -p 9999:9999 dostuffonline/frontend:latest

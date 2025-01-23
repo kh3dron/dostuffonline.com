@@ -1,5 +1,5 @@
 #!/bin/bash
-docker stop webtools-divide
-docker rm webtools-divide
-docker build -t webtools/divide:latest .
-docker run -d --name webtools-divide -p 10003:10003 webtools/divide:latest
+docker stop dostuffonline-divide
+docker rm dostuffonline-divide
+docker build -t dostuffonline/divide:latest .
+docker run -d --name dostuffonline-divide -p 10003:10003 dostuffonline/divide:latest

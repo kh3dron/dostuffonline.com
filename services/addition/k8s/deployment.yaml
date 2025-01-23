@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: addition
+  namespace: math
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: addition
+  template:
+    metadata:
+      labels:
+        app: addition
+    spec:
+      containers:
+      - name: addition
+        image: dostuffonline/addition:latest
+        ports:
+        - containerPort: 10000

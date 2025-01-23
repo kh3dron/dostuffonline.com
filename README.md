@@ -12,5 +12,4 @@ Each service has a deploy.sh in it's `/services/${service}` directory. That scri
 
 # Access Globally 
 
-This app is not up yet! how humiliating. 
-It will soon be running on my R53 + Caddy + EC2 free tier stack.
+Try it out at dostuffonline.com!
