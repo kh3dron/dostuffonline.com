@@ -1,3 +1,5 @@
+### each service has its own port exposed 
+
 9999  Frontend
 
 10000 addition
