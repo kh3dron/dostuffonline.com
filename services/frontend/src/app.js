@@ -11,10 +11,12 @@ app.use(express.static(path.join(__dirname, "public")));
 const indexRouter = require("./routes/index");
 const mathRouter = require("./routes/math");
 const unitConversionRouter = require("./routes/unit-conversion");
+const networkTestingRouter = require("./routes/network-testing");
 
 app.use("/", indexRouter);
 app.use("/math", mathRouter);
 app.use("/unit-conversion", unitConversionRouter);
+app.use("/network-testing", networkTestingRouter);
 
 // 404 Error Handler
 app.use((req, res, next) => {

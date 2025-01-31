@@ -7,3 +7,4 @@
 10002 multiply
 10003 divide 
 
+11000 dig

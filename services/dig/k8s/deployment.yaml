@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dig
+  namespace: networking
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dig
+  template:
+    metadata:
+      labels:
+        app: dig
+    spec:
+      containers:
+      - name: dig
+        image: dostuffonline/dig:latest
+        ports:
+        - containerPort: 10000
