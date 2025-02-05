@@ -1,7 +1,7 @@
 async function performDIG() {
     const n = document.getElementById("digNum1").value;
     console.log(`Performing DIG with ${n}`);
-    const response = await fetch("http://localhost:11000/dig?url=" + n, {
+    const response = await fetch("/api/dig?url=" + n, {
         method: "GET",
         headers: {
             "Content-Type": "application/json",

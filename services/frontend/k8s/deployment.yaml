@@ -8,3 +8,13 @@ spec:
   selector:
     matchLabels:
       app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+      - name: frontend
+        image: dostuffonline/frontend:latest
+        ports:
+        - containerPort: 9999
