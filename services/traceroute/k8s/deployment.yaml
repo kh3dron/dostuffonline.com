@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: traceroute
+  namespace: networking
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: traceroute
+  template:
+    metadata:
+      labels:
+        app: traceroute
+    spec:
+      containers:
+      - name: traceroute
+        image: dostuffonline/traceroute:latest
+        ports:
+        - containerPort: 11001

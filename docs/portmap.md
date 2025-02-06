@@ -8,3 +8,4 @@
 10003 divide 
 
 11000 dig
+11001 traceroute

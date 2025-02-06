@@ -4,8 +4,19 @@
 <script src="../../js/network-testing.js"></script> 
 <div>
   <h3>DIG</h3>
-  <input type="domain" id="digNum1" placeholder="Domain" />
+  <input type="domain" id="digNum1" placeholder="Domain" value="google.com" 
+         onkeydown="if(event.keyCode === 13) performDIG()" />
   <button onclick="performDIG()">DIG</button>
+  <button onclick="clearOutput('digResult')">Clear</button>
   <p id="digResult"></p>
 </div>
 
+<!-- TODO streaming is not working -->
+<div>
+  <h3>Traceroute</h3> 
+  <input type="domain" id="tracerouteNum1" placeholder="Domain" value="google.com" 
+         onkeydown="if(event.keyCode === 13) performTraceroute()" />
+  <button onclick="performTraceroute()">Traceroute</button>
+  <button onclick="clearOutput('tracerouteResult')">Clear</button>
+  <p id="tracerouteResult"></p>
+</div>
