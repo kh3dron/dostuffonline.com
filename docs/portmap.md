@@ -1,11 +1,5 @@
-### each service has its own port exposed 
-
-9999  Frontend
-
-10000 addition
-10001 subtraction
-10002 multiply
-10003 divide 
-
-11000 dig
-11001 traceroute
+10000 math:addition
+11000 networking:dig
+11001 networking:traceroute
+11002 networking:nslookup
+9999 frontend:frontend

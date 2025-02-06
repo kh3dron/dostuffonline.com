@@ -20,3 +20,12 @@
   <button onclick="clearOutput('tracerouteResult')">Clear</button>
   <p id="tracerouteResult"></p>
 </div>
+
+<div>
+  <h3>NSLOOKUP</h3>
+  <input type="domain" id="nslookupNum1" placeholder="Domain" value="google.com" 
+         onkeydown="if(event.keyCode === 13) performNSLOOKUP()" />
+  <button onclick="performNSLOOKUP()">NSLOOKUP</button>
+  <button onclick="clearOutput('nslookupResult')">Clear</button>
+  <p id="nslookupResult"></p>
+</div>

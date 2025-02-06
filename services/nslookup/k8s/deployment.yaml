@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dig
+  name: nslookup
   namespace: networking
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: dig
+      app: nslookup
   template:
     metadata:
       labels:
-        app: dig
+        app: nslookup
     spec:
       containers:
-      - name: dig
-        image: dostuffonline/dig:latest
+      - name: nslookup
+        image: dostuffonline/nslookup:latest
         ports:
-        - containerPort: 11000
+        - containerPort: 11002
